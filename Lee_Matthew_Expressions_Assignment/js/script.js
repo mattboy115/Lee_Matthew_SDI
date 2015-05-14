@@ -4,7 +4,7 @@ var grassHeight = prompt("What would you say is the height of your grass in inch
 var yeardWidth = prompt("What is the width of your lawn in yards?"); //Prompt for the width of lawn.
 var yardLength = prompt("How far back does your lawn go in yards?"); //Promot for the length of lawn.
 
-alert("Your yard will cost $" + (yardLength * 0.5 + yeardWidth * 0.25 + grassHeight * 2) + " to cut."); //Output showing the cost of the lawn in dollars.
+alert("Your is going to cost $" + (yardLength * 0.5 + yeardWidth * 0.25 + grassHeight * 2) + " to cut."); //Output showing the cost of the lawn in US dollars.
 
 //I typed in 1, 40, and 50 and got $37.
 //I've tried 3, 200, and 340 and got $226.
