@@ -14,16 +14,18 @@ else {
 }
 
 if(howManyPhones == "" || isNaN(howManyPhones)) {
-	howManyPhones = prompt("We're sorry. You're going to have to enter a whole number."); //What happense when a non number value is entered.
+	howManyPhones = prompt("We're sorry. You're going to have to enter a whole number."); //What happense when a non number value or blank is entered.
 }
 
-if(addData = "Yes" || "yes" || "y" || "Y") {
-	var howMuchData = prompt("We offer up to 8gb of data per month for our customers. How much data would you like?\n 1gb: $10\n3gb: $20\n5gb: ");
-}
-
-if(addData = "No" || "no" || "n" || "N") {
+if(addData = "No" ) {
 	console.log("Your final bill is " + billBeforeData + ".")
 }
+
+if(addData = "Yes" ) {
+	var howMuchData = prompt("We offer up to 8gb of data per month for our customers. How much data would you like?\n 1gb: $10\n3gb: $20\n5gb: $40\n8gb: $50");
+}
+
+
 
 var finalBill = howManyPhones + howMuchData;
 
