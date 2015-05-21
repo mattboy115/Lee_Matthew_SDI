@@ -5,22 +5,21 @@ var billBeforeData = howManyPhones * 50 + 20; //Bill with the number phones adde
 
 
 
-if(howManyPhones <= 5) {
-	alert("You have added " + howManyPhones + " to your line. Your bill before data is $" + billBeforeData + "."); //What happens when an acceptable value is entered.
+if(howManyPhones <= 5 && howManyPhones >= 1) {
+	addData = prompt("You have added " + howManyPhones + " to your line. Your bill before data is $" + billBeforeData + "."); //What happens when an acceptable value is entered.
 }
 
-if(howManyPhones <= 0) {
-	howManyPhones = prompt("I'm sorry. We can't add negative phones to our data plans yet. Try next year perhaps."); //What happense if 0 or a negative number is entered.
-}
-if(isNaN(howManyPhones)) {
+if(howManyPhones == "" || isNaN(howManyPhones)) {
 	howManyPhones = prompt("We're sorry. You're going to have to enter a whole number."); //What happense when a non number value is entered.
 }
 
-if(howManyPhones == " ") {
-	howManyPhones = prompt("You can't leave that space blank. Sorry.");
+else {
+	howManyPhonesm = prompt("We're sorry. That's not an option we offer.")
 }
 
-var howMuchData = prompt("We offer up to 8gb of data per month for our customers. How much data would you like?\n 1gb: $10\n3gb: $20\n5gb: ");
+if(addData = "Yes" || "yes" || "y" || "Y") {
+	var howMuchData = prompt("We offer up to 8gb of data per month for our customers. How much data would you like?\n 1gb: $10\n3gb: $20\n5gb: ");
+}
 
 var finalBill = howManyPhones + howMuchData;
 
