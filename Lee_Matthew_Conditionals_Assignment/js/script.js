@@ -6,19 +6,23 @@ var billBeforeData = howManyPhones * 50 + 20; //Bill with the number phones adde
 
 
 if(howManyPhones <= 5 && howManyPhones >= 1) {
-	addData = prompt("You have added " + howManyPhones + " to your line. Your bill before data is $" + billBeforeData + "."); //What happens when an acceptable value is entered.
+	addData = prompt("You have added " + howManyPhones + " phones to your line. Your bill before data is $" + billBeforeData + ". Will you add data to your plan?"); //What happens when an acceptable value is entered.
+}
+
+else {
+	howManyPhones = prompt("That's not an option we offer. Try again!")
 }
 
 if(howManyPhones == "" || isNaN(howManyPhones)) {
 	howManyPhones = prompt("We're sorry. You're going to have to enter a whole number."); //What happense when a non number value is entered.
 }
 
-else {
-	howManyPhonesm = prompt("We're sorry. That's not an option we offer.")
-}
-
 if(addData = "Yes" || "yes" || "y" || "Y") {
 	var howMuchData = prompt("We offer up to 8gb of data per month for our customers. How much data would you like?\n 1gb: $10\n3gb: $20\n5gb: ");
+}
+
+if(addData = "No" || "no" || "n" || "N") {
+	console.log("Your final bill is " + billBeforeData + ".")
 }
 
 var finalBill = howManyPhones + howMuchData;
