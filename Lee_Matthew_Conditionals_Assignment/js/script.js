@@ -31,22 +31,27 @@ else {
 
 if(howMuchData == 1) {
 	finalBill = billBeforeData + 10;
-	console.log("Your final bill is $" + finalBill + "."); //The 
+	console.log("Your final bill is $" + finalBill + "."); //The result for 1gb of data.
 }
 
 if(howMuchData == 3) {
 	finalBill = billBeforeData + 20;
-	console.log("Your final bill is $" + finalBill + ".");
+	console.log("Your final bill is $" + finalBill + "."); //The result for 3gb of data.
 }
 if(howMuchData == 5) {
 	finalBill = billBeforeData + 40;
-	console.log("Your final bill is $" + finalBill + ".");
+	console.log("Your final bill is $" + finalBill + "."); //The result for 5gb of data.
 }
 if(howMuchData == 8) {
 	finalBill = billBeforeData + 50;
-	console.log("Your final bill is $" + finalBill + ".");
+	console.log("Your final bill is $" + finalBill + "."); //The result for 8gb of data.
 }
 
 else{
+	howMuchData = prompt("That's not an available option."); //The result for a wrong entry.
+} 
 
-}
+
+//Not everything works but I ran out of time. If I enter Yes for data and enter an amount I'm not getting a result in the console.
+//If I enter No, I get a rusult in the console. I'm not sure what is wrong with lines 8-18 but it's not working right either.
+//I tried to get help but there was a missed connection.
