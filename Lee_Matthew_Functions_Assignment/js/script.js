@@ -1,5 +1,11 @@
 //Lee_Matthew_Functions_Assignment_5/26/2015
 
+//Main Function
+
+function theConjurer() {
+	prompt("Hi! This is my shape dimension calculator! I have three different shapes in this version but I can always add more! For now I have these three:\nCircle Area\nSphere Volume\nRectangular Prism Volume\n\nEnjoy!!!")
+}
+
 //Function for Dimensions of a Circle
 
 var pi = 3.14; //pi rounded down to the hudredths place.
@@ -12,7 +18,7 @@ function calcCircleArea(p, r) {
 	console.log("The circle you've entered is " + circleArea + " square units!")
 }
 
-calcCircleArea;
+//calcCircleArea; Invoke the circle area function
 
 //Function for Volume of a Sphere
 
@@ -20,13 +26,14 @@ var fourThirds = (4/3);
 
 calcSphereVolume(fourThirds, pi, radius);
 
-function calcSphereVolume() {
-
+function calcSphereVolume(f, p, r) {
+	var sphereVolume = f * p * Math.pow(r, 3);
+	console.log("Your sphere is " sphereVolume " cubed units! Congradulations!")
 }
 
-//Function for Dimensions of a Rectangular Prism
+//calcSphereVolume; //Invoke the sphere volume function.
 
-alert
+//Function for Dimensions of a Rectangular Prism
 
 var length = prompt("What's the length of this prism?"); //User input for the shape's length.
 var width = prompt("What's the width?"); //User input for the shape's width.
@@ -39,4 +46,4 @@ function calcPrismVolume(l, w, h) { //Function and its parameters.
 	console.log("Your prism is " + prismVolume + " cubed units!"); //Output of shape's area.
 }
 
-calcPrismVolume; //Invoke the prism function.
+//calcPrismVolume; //Invoke the prism function.
