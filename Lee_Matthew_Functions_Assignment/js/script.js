@@ -4,6 +4,10 @@
 
 function theConjurer() {
 	prompt("Hi! This is my shape dimension calculator! I have three different shapes in this version but I can always add more! For now I have these three:\nCircle Area\nSphere Volume\nRectangular Prism Volume\n\nEnjoy!!!")
+
+	if("Circle") {
+		
+	}
 }
 
 //Function for Dimensions of a Circle
