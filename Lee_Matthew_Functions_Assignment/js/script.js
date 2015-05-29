@@ -36,23 +36,24 @@
 
 			calcCircleArea(pi, circleRadius); //Variable declarations.
 
-			function calcCircleArea(p, r) { //
-				var circleArea = p * Math.pow(r, 2);
-				console.log("The circle you've entered is " + circleArea + " square units!");
+			function calcCircleArea(p, r) { //Function for area of a circle.
+				var circleArea = p * Math.pow(r, 2); //Code to run for figuring the area.
+				console.log("The circle you've entered is " + circleArea + " square units!"); //Print the area variable in the console.
 			}
 
 
 			//Function for Volume of a Sphere
 
-			var fourThirds = (4/3);
+			var fourThirds = (4/3); //Variable for mutiplying by 4/3.
 			var radius = prompt("Do you know the diameter of your sphere? Just half that is your radius! What's the radius?"); //User input for the shape's radius.
 			
-			calcSphereVolume(fourThirds, pi, radius);
+			calcSphereVolume(fourThirds, pi, radius); //Variable declarations.
 				
-			function calcSphereVolume(f, p, r) {
-				var sphereVolume = f * p * Math.pow(r, 3);
-				console.log("Your sphere is " + sphereVolume + " cubed units! Congradulations!");
+			function calcSphereVolume(f, p, r) { //Function for Sphere Volume.
+				var sphereVolume = f * p * Math.pow(r, 3); //Code to run for figuring volume.
+				console.log("Your sphere is " + sphereVolume + " cubed units! Congradulations!"); //Volume printed to the console.
 			}
+
 
 			//Function for Dimensions of a Rectangular Prism
 
@@ -66,3 +67,8 @@
 				var prismVolume = l * w * h; //New variable made from multiplying those parameters.
 				console.log("Your prism is " + prismVolume + " cubed units!"); //Output of shape's area.
 			}
+
+			//I couldn't quite figure out how to make these functions run properly. In order to get the paramerters right, 
+			//I had to have the variables outside the function and that made it so all the variable promts ran wether their 
+			//function was called or not. I see that's also why it's returning all my results as NaNs. Some helpful advice in
+			//my grade comments would be appreciated. 
