@@ -3,17 +3,21 @@
 			//Main Function
 
 			function theConjurer() {
-				firstQuestion = prompt("Hi! This is my shape dimension calculator! I have three different shapes in this version but I can always add more! For now I have these three:\nCircle Area\nSphere Volume\nRectangular Prism Volume\n\nEnjoy!!!"); //The answer to this prompt is supposed to spring one of the functions below.
+				firstQuestion = prompt("Hi! This is my shape dimension calculator! I have three different shapes in this version but I can always add more! For now I have these three:\nCircle Area\nSphere Volume\nRectangular Prism Volume\n\nEnjoy!!!");
+					return firstQuestion.toLowerCase(); //The answer to this prompt is supposed to spring one of the functions below.
 
 				if(firstQuestion === "Circle" || firstQuestion === "Circle Area") { //If the answer is one of these strings, then it triggers the circle area function.
+					console.log("You've slected Circle!")
 					calcCircleArea();
 				}
 
 				else if(firstQuestion === "Sphere" || firstQuestion === "Sphere Volume") { //This one triggers the sphere volume function.
+					console.log("You've slected Sphere!")
 					calcSphereVolume();
 				}
 
 				else if(firstQuestion === "Prism" || firstQuestion === "Rectangular Prism" || firstQuestion === "Prism Volume" || firstQuestion === "Rectangular Prism Volume") { //This one is for volume of a rectangular prism.
+					console.log("You've slected Rectangular Prism!")
 					calcPrismVolume();
 				}
 
@@ -28,8 +32,9 @@
 			//Function for Dimensions of a Circle
 
 			var pi = 3.14; //pi rounded down to the hudredths place.
+			var circleRadius = prompt("What is the radius of your circle?")
 
-			calcCircleArea(pi, radius); //Variable declarations.
+			calcCircleArea(pi, circleRadius); //Variable declarations.
 
 			function calcCircleArea(p, r) { //
 				var circleArea = p * Math.pow(r, 2);
@@ -39,11 +44,11 @@
 
 			//Function for Volume of a Sphere
 
+			var fourThirds = (4/3);
+			var radius = prompt("Do you know the diameter of your sphere? Just half that is your radius! What's the radius?"); //User input for the shape's radius.
+			
 			calcSphereVolume(fourThirds, pi, radius);
-
-				var fourThirds = (4/3);
-				var radius = prompt("Do you know the diameter of your sphere? Just half that is your radius! What's the radius?"); //User input for the shape's radius.
-
+				
 			function calcSphereVolume(f, p, r) {
 				var sphereVolume = f * p * Math.pow(r, 3);
 				console.log("Your sphere is " + sphereVolume + " cubed units! Congradulations!");

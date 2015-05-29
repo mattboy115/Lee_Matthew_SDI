@@ -10,7 +10,7 @@ function calcCirc() {  //Function for figuring circumference.
 	console.log(circumference); //Console prints out the result, being the variable circumference.
 }
 
-function calcArea() {  //Function for area just because.
+function calcArea() {  //Function for area just because I felt like it.
 	var radOfCircle = prompt("What is the radius of your circle?"); //User input for radius of the circle.
 	var area = piRound * Math.pow(radOfCircle, 2); //Variable figuring the area of a circle.
 	console.log(area); //Console prints out the result, being the variable area.
@@ -25,3 +25,4 @@ calcArea(); //Area function invoked.
 
 //STUNG
 
+var stingsPerPound = 8.666666667;
